@@ -594,6 +594,7 @@ function openDetail(no){
   const d=document.getElementById('detail');
   d.scrollTop=0; d.classList.add('open'); document.body.classList.add('locked');
   history.replaceState(null,'','#no'+no);
+  if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:location.pathname+'#no'+no,title:'Vol26.06 · No.'+no});
 }
 function closeDetail(){
   document.getElementById('detail').classList.remove('open');
@@ -770,5 +771,10 @@ applyLang();
 requestAnimationFrame(()=>{baseW=heroImg.offsetWidth||baseW;heroLoopOn=true;heroTick();});
 if(location.hash.startsWith('#no')) openDetail(location.hash.slice(3));
 </script>
+<!-- GoatCounter analytics (privacy-friendly, no cookies). Dashboard: https://yizhikirby.goatcounter.com -->
+<script>window.goatcounter={no_onload:true};</script>
+<script data-goatcounter="https://yizhikirby.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"
+        onload="window.goatcounter&&window.goatcounter.count&&window.goatcounter.count({path:location.pathname+(location.hash.indexOf('#no')===0?location.hash:'')})"></script>
 </body>
 </html>
