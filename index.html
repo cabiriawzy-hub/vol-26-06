@@ -431,11 +431,11 @@ const tt=o=>o[lang]||o.zh;
 const T=(a,k)=>lang==='en'&&a[k+'_en']?a[k+'_en']:a[k];
 const regionOf=a=>a.region?(REGION[a.region]?REGION[a.region][lang]:a.region):'';
 const QUOTES={
-  sichao:{zh:'为了卡住别人而筑起的墙，最后挡住的，往往是筑墙的人自己。',en:'A wall built to fence others in ends up fencing in the one who built it.',attr:{zh:'——《我们越过了卢比孔河》',en:'— We Have Crossed the Rubicon'},no:'02',col:'col-sichao'},
-  xinchanpin:{zh:'过去是一个人盯着一个 Claude，现在整个频道共用一个——团队名单里，多了一行不下线的名字。',en:'Once it was one person watching one Claude; now a whole channel shares one — the team roster just gained a name that never logs off.',attr:{zh:'——《多了一个不下线的同事》',en:'— A Colleague Who Never Logs Off'},no:'05',col:'col-xinchanpin'},
-  yanjiu:{zh:'想带偏一个模型，未必要攻破它——改改它引用的来源就够了。',en:'To sway a model you needn\'t break it — just edit the sources it cites.',attr:{zh:'——《125 条维基编辑，扭转了模型的立场》',en:'— 125 Wikipedia Edits Shift a Model\'s Stance'},no:'08',col:'col-yanjiu'},
-  hangye:{zh:'同一粒 token，在卖它的人那头是金子，在买它的人这头是账单。',en:'The same token is gold on the seller\'s side and a bill on the buyer\'s.',attr:{zh:'——《同一粒 token，一边是利润，一边是成本》',en:'— One Token, Profit and Cost'},no:'13',col:'col-hangye'},
-  kaiyuan:{zh:'模型再强，没有这些零件，它也只是个困在对话框里、够不着真实世界的聪明脑袋。',en:'However strong the model, without these parts it is just a clever mind trapped in a chat box, unable to reach the real world.',attr:{zh:'——《三个人，替 AI 补上身体》',en:'— Three Developers Give AI a Body'},no:'19',col:'col-kaiyuan'},
+  sichao:{zh:'为了卡住别人而筑起的墙，最后挡住的，往往是筑墙的人自己。',en:'A wall built to fence others in ends up fencing in the one who built it.',attr:{zh:'——《渡过那条不归的河流》',en:'— Crossing the River of No Return'},no:'02',col:'col-sichao'},
+  xinchanpin:{zh:'过去是一个人盯着一个 Claude，现在整个频道共用一个——团队名单里，多了一行不下线的名字。',en:'Once it was one person watching one Claude; now a whole channel shares one — the team roster just gained a name that never logs off.',attr:{zh:'——《那个永远在线的隐形同事》',en:'— The Invisible Colleague Who Never Logs Off'},no:'05',col:'col-xinchanpin'},
+  yanjiu:{zh:'想带偏一个模型，未必要攻破它——改改它引用的来源就够了。',en:'To sway a model you needn\'t break it — just edit the sources it cites.',attr:{zh:'——《维基百科的暗门》',en:'— Wikipedia\'s Back Door'},no:'08',col:'col-yanjiu'},
+  hangye:{zh:'同一粒 token，在卖它的人那头是金子，在买它的人这头是账单。',en:'The same token is gold on the seller\'s side and a bill on the buyer\'s.',attr:{zh:'——《算力账单两头的悲喜：金矿与水表》',en:'— Two Ends of the Compute Bill: Gold Mine and Water Meter'},no:'13',col:'col-hangye'},
+  kaiyuan:{zh:'模型再强，没有这些零件，它也只是个困在对话框里、够不着真实世界的聪明脑袋。',en:'However strong the model, without these parts it is just a clever mind trapped in a chat box, unable to reach the real world.',attr:{zh:'——《补齐赛博躯体：边缘开发者的硬核缝合术》',en:'— Patching In the Cyber-Body: Edge Developers\' Hardcore Surgery'},no:'19',col:'col-kaiyuan'},
 };
 const MODALS={
   about:{zh:'<p class="m-kicker">关于本刊</p><p class="m-q">为什么想到做这个？</p><p>各种 AI 自动推送日报、耸人听闻的营销号太多了，追热点永远会慢半拍，鲜有深度思考；因此每隔一段时间把视野拉远到整个 AI 行业，或许能帮我们客观冷静地看待当前的发展与思潮。</p><p>这份「月刊」不是新闻摘要，更像一本悉心编辑过的专题杂志。选题与原始信源由 @Zhiyi Wang 和 AI 共同筛选把控，力求每一章节都真实可靠。</p><p class="m-q">原始信源</p><p>每期内容的全部信息来源与采编方法已公开，可逐条核查：<a class="m-link" href="https://bytedance.larkoffice.com/docx/N3MXdfiFjo2e82xaNN4cpfhEnng" target="_blank" rel="noopener">信息来源与采编方法 →</a></p>',
